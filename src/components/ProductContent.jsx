@@ -28,7 +28,7 @@ export default function ProductContent(section, idx){
 		return <img
 			src={process.env.REACT_APP_API_URL+url}
 			alt={alt}
-			className="object-cover object-center"
+			className="w-2/4 object-cover object-center"
 		/>
 	};
 
