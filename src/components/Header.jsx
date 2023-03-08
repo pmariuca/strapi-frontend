@@ -1,8 +1,8 @@
 import React from "react";
-import Products from "./Products";
 
 const navigation = [
 	{name: 'Toate produsele', href: '/'},
+	{name: 'Dynamic Zone', href: '/dynamic'},
 	{ name: 'Tricouri', href: '/tricou' },
 	{ name: 'Hanorace', href: 'hanorac' },
 	{ name: 'Bluze', href: '/bluza' },
@@ -11,8 +11,7 @@ const navigation = [
 	{ name: 'Camasi', href: '/camasa' },
 ];
 
-const Layout = (props) => {
-	const {page}=props;
+const Header = () => {
 
 	const renderMenuItems=()=>{
 		return navigation?.map((item) => (
@@ -41,9 +40,8 @@ const Layout = (props) => {
 					</div>
 				</nav>
 			</header>
-			<Products page={page}/>
 		</>
-			)
+	)
 };
 
-export default Layout;
+export default Header;
